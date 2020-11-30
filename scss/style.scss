@@ -9,12 +9,12 @@
 
 
 body {
- 
+  width: 100%;
   font-family: $regular;
   background-color: $black;
   color: $white;
-  font-size: 84px;
-  line-height: 1.1;
+  font-size: 24px;
+  line-height: 28px;
   // для плавного перехода между секциями
   // scroll-behavior: smooth;
 }
