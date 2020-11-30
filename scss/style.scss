@@ -18,3 +18,62 @@ body {
   // для плавного перехода между секциями
   // scroll-behavior: smooth;
 }
+
+.container{
+  max-width: 1230px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 100vh;
+  background-image: url('../img/slider-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__inner{
+    padding: 25px 0px;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 30px 0px;
+    
+  }
+
+  &__logo {
+    background-image: url('../img/header-logo.png');
+    width: 240px;
+    height: 55px;
+  }
+
+  &__menu {
+  }
+
+  &__body {
+  }
+
+  &__title {
+    color: $white;
+    font-size: 96px;
+line-height: 112px;
+margin: 0px 0px 40px 0px;
+
+  }
+
+  &__text {
+    max-width: 284px;
+    margin: 0px 0px 25px 0px;
+    
+  }
+
+  &__btn {
+    display: inline-block;
+    font-family: $bold;
+    padding: 30px 60px;
+    background: rgba(255, 255, 255, 0.15);
+border: 1px solid #FFFFFF;
+  }
+}
