@@ -19,6 +19,10 @@ body {
   // scroll-behavior: smooth;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 .container {
   
   max-width: 1230px;
