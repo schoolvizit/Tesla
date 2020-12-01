@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tesla</title>
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,13 +15,34 @@
 		<div class="container">
 			<div class="header__inner">
 				<div class="header__top">
-					<div class="header__logo"></div>
-					<div class="header__menu burger">
-						<div class="burger__btn">
-							<span></span>
-						</div>
-						<div class="burger__overlay"></div>
+					<div class="header__logo">
+						<a href="#"><img src="img/header-logo.png" alt="logo"></a>
 					</div>
+					<nav class="header__menu">
+						<div class="menu-container">
+							<ul class="header__list">
+								<li class="header__item">
+									<a href="#" class="header__link">Узнать цену</a>
+								</li>
+								<li class="header__item">
+									<a href="#" class="header__link">Характеристики</a>
+								</li>
+								<li class="header__item">
+									<a href="#" class="header__link">Тест Драйв</a>
+								</li>
+								<li class="header__item">
+									<a href="#" class="header__link">Новости</a>
+								</li>
+								<li class="header__item">
+									<a href="#" class="header__link">Контакты</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+					<button class="burger">
+						<span></span>
+					</button>
+					<div class="burger__overlay"></div>
 				</div>
 	
 				<div class="header__body">
@@ -36,6 +58,23 @@
 		</div>
 	</header>
 
+	<div class="slider">
+		<div class="slider__item">
+			<img src="img/slider-1.jpg" alt="">
+		</div>
+		<div class="slider__item">
+			<img src="img/slider-2.jpg" alt="">
+		</div>
+		<div class="slider__item">
+			<img src="img/slider-3.jpg" alt="">
+		</div>
+	
+	</div>
+
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<!-- <script src="js/swiper-bundle.min.js"></script> -->
 	<script src="js/main.js"></script>
 </body>
 

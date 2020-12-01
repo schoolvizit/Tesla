@@ -1,7 +1,4 @@
 // burger js
-
-
-
 const burger = document.querySelector('.burger'),
       buttonClose = document.querySelector('.burger span'),
       menu = document.querySelector('.header__menu'),
@@ -13,6 +10,7 @@ const burger = document.querySelector('.burger'),
 
 
 burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
   buttonClose.classList.toggle('active');
   menu.classList.toggle('active');
   overlay.classList.toggle('active');
@@ -61,3 +59,29 @@ links.forEach(function (item) {
 // 	}
 // });
 
+// Slider Slick
+
+$(function(){
+	$('.slider').slick({
+    arrows:false,
+    fade:true,
+    dots:true,
+    autoplay: true,
+
+    // Адаптив
+    // responsive:[
+ 		// 	{
+ 		// 		breakpoint: 768,
+ 		// 		settings: {
+ 		// 			slidesToShow:2
+ 		// 		}
+ 		// 	},
+ 		// 	{
+ 		// 		breakpoint: 550,
+ 		// 		settings: {
+ 		// 			slidesToShow:1
+ 		// 		}
+ 		// 	}
+ 		// ]
+  });
+});
