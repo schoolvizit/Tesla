@@ -1,0 +1,204 @@
+// /* Large desktops and laptops */
+// @media (min-width: 1200px) {
+
+// }
+
+// /* Landscape tablets and medium desktops */
+// @media (min-width: 992px) and (max-width: 1199px) {
+
+// }
+
+// /* Portrait tablets and small desktops */
+// @media (min-width: 768px) and (max-width: 991px) {
+
+// }
+
+// /* Landscape phones and portrait tablets */
+// @media (max-width: 767px) {
+
+// }
+
+// /* Portrait phones and smaller */
+// @media (max-width: 480px) {
+
+// }
+
+// /* Iphone 5 */
+// @media (max-width: 320px) {
+
+// }
+
+@media (max-width: 991px) {
+  .advantage {
+
+    &__info {
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    &__info h3 {
+      margin-left: 30px;
+    }
+
+    &__item {
+      margin: 0 0 auto 30px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__list {
+      text-align: center;
+    }
+  }
+
+  .slider .slick-dots {
+    justify-content: center;
+  }
+
+  .indicators {
+    &__body {
+      display: block;
+      padding-top: 0px;
+    }
+  }
+
+  .speed {
+
+    &__body {
+      display: block;
+      text-align: center;
+    }
+
+    &__info h3 {
+      font-size: 50px;
+      margin: 0px 0px 20px 0px;
+    }
+
+    &__info p {
+      max-width: 100%;
+      margin: 0px 0px 50px 0px;
+    }
+  }
+
+  .advantage {
+    &__body {
+      display: block;
+      text-align: center;
+    }
+
+    &__info h3 {
+      font-size: 50px;
+      margin-left: 0px;
+    }
+
+    &__item {
+      margin: 50px 0 20px 0px;
+    }
+  }
+
+  .specific {
+
+    &__img {
+      margin: 0px 0px 70px 0px;
+    }
+    
+    &__body {
+      display: block;
+    }
+  
+    &__block {
+      display: flex;
+      margin-bottom: 50px;
+    }
+    
+    &__text {
+      padding: 30px 0px 0px 60px;
+    }
+  }
+}
+
+
+@media (max-width: 479px) {
+
+  .page-section {
+    margin: 70px 0;
+  }
+
+  .header {
+
+    &__body {
+      height: 80%;
+      justify-content: center;
+    }
+
+    &__top {
+      margin: 0;
+    }
+
+    &__list a {
+      font-size: 40px;
+      line-height: 50px;
+      max-width: 300px;
+    }
+
+    &__title {
+      font-size: 70px;
+      line-height: 1.1;
+      margin: 0px 0px 30px 0px;
+    }
+
+    &__text {
+      margin: 0px 0px 70px 0px;
+    }
+  }
+
+  .slider .slick-dots {
+    display: none;
+  }
+
+  .row {
+    margin-bottom: 70px;
+
+    &__value {
+      font-size: 70px;
+      line-height: 90px;
+      padding: 10px 0px 0px 0px;
+    }
+
+    &__value span {
+      bottom: 15px;
+    }
+  }
+
+  .speed {
+    &__info h3 {
+      font-size: 36px;
+    }
+  }
+
+  .advantage {
+    &__info h3 {
+      font-size: 36px;
+    }
+  }
+
+  .specific {
+
+    &__img {
+      margin: 0px 0px 50px 0px;
+    }
+
+    &__text {
+      padding: 30px 0px 0px 30px;
+    }
+  }
+}

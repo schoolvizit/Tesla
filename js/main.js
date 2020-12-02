@@ -8,7 +8,6 @@ const burger = document.querySelector('.burger'),
       overlay = document.querySelector('.burger__overlay');
 
 
-
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
   buttonClose.classList.toggle('active');
@@ -18,8 +17,8 @@ burger.addEventListener('click', () => {
 });
 
 
-
 overlay.addEventListener('click', () => {
+  burger.classList.remove('active');
   buttonClose.classList.remove('active');
   menu.classList.remove('active');
   overlay.classList.remove('active');
@@ -29,6 +28,7 @@ overlay.addEventListener('click', () => {
 
 links.forEach(function (item) {
   item.addEventListener('click', () => {
+    burger.classList.remove('active');
     buttonClose.classList.remove('active');
     menu.classList.remove('active');
     overlay.classList.remove('active');
@@ -67,21 +67,5 @@ $(function(){
     fade:true,
     dots:true,
     autoplay: true,
-
-    // Адаптив
-    // responsive:[
- 		// 	{
- 		// 		breakpoint: 768,
- 		// 		settings: {
- 		// 			slidesToShow:2
- 		// 		}
- 		// 	},
- 		// 	{
- 		// 		breakpoint: 550,
- 		// 		settings: {
- 		// 			slidesToShow:1
- 		// 		}
- 		// 	}
- 		// ]
   });
 });
