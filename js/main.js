@@ -8,6 +8,7 @@ const burger = document.querySelector('.burger'),
       overlay = document.querySelector('.burger__overlay');
 
 
+
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
   buttonClose.classList.toggle('active');
@@ -15,6 +16,7 @@ burger.addEventListener('click', () => {
   overlay.classList.toggle('active');
   document.body.classList.toggle('lock');
 });
+
 
 
 overlay.addEventListener('click', () => {
@@ -67,5 +69,15 @@ $(function(){
     fade:true,
     dots:true,
     autoplay: true,
+
+    // Адаптив
+    responsive:[
+ 			{
+ 				breakpoint: 479,
+ 				settings: {
+          dots:false,
+ 				}
+ 			}
+ 		]
   });
 });
