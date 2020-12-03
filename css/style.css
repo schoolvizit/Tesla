@@ -747,7 +747,7 @@ body.lock {
   }
   .header__title {
     font-size: 50px;
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 10px 0px;
   }
   .header__text {
     font-size: 20px;
@@ -758,7 +758,7 @@ body.lock {
     padding: 15px 40px;
   }
   .slider .slick-dots {
-    left: 100%;
+    left: -100%;
   }
   .burger {
     width: 40px;
