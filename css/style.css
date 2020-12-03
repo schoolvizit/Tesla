@@ -342,9 +342,11 @@ body.lock {
 
 .slider__item img {
   height: 100%;
-  max-width: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
 }
 
 .slider .slick-dots {
